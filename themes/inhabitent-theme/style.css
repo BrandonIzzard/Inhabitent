@@ -630,7 +630,7 @@ a {
   background-color: #248A83;
   color: white;
   padding: .75rem 1rem;
-  margin: 0 0 2rem .5rem;
+  margin: 0 0 2rem 0;
   text-transform: uppercase;
   bottom: 0; }
   .entry-meta a {
@@ -645,7 +645,7 @@ a {
   width: 60%;
   color: white;
   padding: .75rem 1rem;
-  margin: 1rem 0 2rem .5rem; }
+  margin: 1rem 0 2rem 0; }
 
 .entry-title,
 .entry-content h2 {
