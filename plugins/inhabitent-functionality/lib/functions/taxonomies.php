@@ -6,7 +6,7 @@
  */
 
 // Add your custom taxonomies here...
-// Register Custom Taxonomy
+// Register Custom Product Type Taxonomy
 function register_poduct_type_taxonomy() {
 
 	$labels = array(
