@@ -1,19 +1,20 @@
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-
 /* Links */
 
 a {
-	color: $color__link;
+	img{
+		// margin-left: 200px;
+		height: 30px; 
+		
+	}
+	
 
 	&:visited {
-		color: $color__link-visited;
+		color: purple;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: midnightblue;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -22,17 +23,39 @@ a {
 	&:active {
 		outline: 0;
 	}
+	color: royalblue;
 }
 
 /* Menus */
-
+.menu-item{ 
+	a{
+		padding: 5px;
+		color:  #248A83;
+	}
+}
+.menu-menu-1-container{
+	margin-right: 50px;
+}
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+	height: 2rem;
+	background:rgba(255,255,255,0.5);	
 	width: 100%;
+	margin: 0 auto;
+	padding-right: 2rem;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	.logo{
+		margin-left: 50px;
+		display: flex;
+		align-items: center;	
+		height: 100%;
+	}
+	
 
 	ul {
+		
+
 		display: none;
 		list-style: none;
 		margin: 0;
@@ -42,7 +65,7 @@ a {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: $base__space-unit;
+			top: 1.5em;
 			left: -999em;
 			z-index: 99999;
 
@@ -78,7 +101,6 @@ a {
 	}
 	li {
 		float: left;
-		padding-left: 1.5rem;
 		position: relative;
 
 		&:hover > a,
@@ -86,6 +108,7 @@ a {
 		}
 	}
 	a {
+
 		display: block;
 		text-decoration: none;
 	}
@@ -116,7 +139,7 @@ a {
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 $base__space-unit;
+		margin: 0 0 1.5em;
 		overflow: hidden;
 	}
 

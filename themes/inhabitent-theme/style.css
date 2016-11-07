@@ -403,12 +403,11 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
 /* Links */
 a {
   color: royalblue; }
+  a img {
+    height: 30px; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -419,11 +418,32 @@ a {
     outline: 0; }
 
 /* Menus */
+.menu-item a {
+  padding: 5px;
+  color: #248A83; }
+
+.menu-menu-1-container {
+  margin-right: 50px; }
+
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .main-navigation .logo {
+    margin-left: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -449,7 +469,6 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    padding-left: 1.5rem;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -572,6 +591,9 @@ a {
 .group-blog .byline {
   display: inline; }
 
+.content-area {
+  margin-left: 5%; }
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -592,6 +614,59 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.comments-area h3 {
+  text-transform: uppercase; }
+
+.entry-header {
+  position: relative; }
+
+.entry-content,
+.entry-header img {
+  width: 75%; }
+
+.entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: white;
+  padding: .75rem 1rem;
+  margin: 0 0 2rem .5rem;
+  text-transform: uppercase;
+  bottom: 0; }
+  .entry-meta a {
+    text-decoration: none;
+    color: white; }
+
+.site-main {
+  margin-top: 7%; }
+
+.entry-title {
+  position: relative;
+  width: 60%;
+  color: white;
+  padding: .75rem 1rem;
+  margin: 1rem 0 2rem .5rem; }
+
+.entry-title,
+.entry-content h2 {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.cat-links {
+  padding-right: 20px; }
+
+.entry-title {
+  position: absolute;
+  padding: .75rem 1.5rem;
+  background-color: #248A83;
+  max-width: 75%;
+  left: 0;
+  top: 0;
+  width: 50%; }
+  .entry-title a {
+    text-decoration: none;
+    color: white;
+    height: auto; }
 
 /*--------------------------------------------------------------
 # Media
@@ -657,3 +732,42 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px;
+  padding: 5% 0 2% 0; }
+
+.footer-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .footer-left .contact-us,
+  .footer-left .business-hours {
+    -ms-flex: 25%;
+        flex: 25%; }
+    .footer-left .contact-us h3,
+    .footer-left .business-hours h3 {
+      text-transform: uppercase;
+      color: #d99054; }
+    .footer-left .contact-us p,
+    .footer-left .business-hours p {
+      color: white; }
+  .footer-left .contact-us {
+    margin-left: 5%; }
+    .footer-left .contact-us .fa {
+      padding: 5px;
+      font-size: 1.3rem; }
+  .footer-left .footer-logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-right: 4%;
+    text-align: end; }
+
+.footer-bottom {
+  text-align: center;
+  text-decoration: none; }
+  .footer-bottom span {
+    text-transform: uppercase; }
+  .footer-bottom p {
+    color: white; }

@@ -2,6 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 
+
 /* Posts and pages */
 
 .sticky {
@@ -9,10 +10,10 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 1.5em;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -21,16 +22,21 @@
 	display: inline;
 }
 
+.content-area {
+	margin-left: 5%;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+	margin: 1.5em 0 0;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 1.5em;
 }
+
 
 /* Asides */
 
@@ -39,11 +45,79 @@
 	display: none;
 }
 
+
 /* Comments */
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
+}
+
+.comments-area h3 {
+	text-transform: uppercase;
+}
+
+//main content area
+.entry-header {
+	position: relative;
+}
+
+.entry-content,
+.entry-header img {
+	width: 75%;
+}
+
+.entry-meta {
+	position: absolute;
+	background-color: #248A83;
+	color: white;
+	padding: .75rem 1rem;
+	margin: 0 0 2rem .5rem;
+	text-transform: uppercase;
+	bottom: 0;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.site-main {
+	margin-top: 7%;
+}
+
+//Headers
+.entry-title {
+	position: relative;
+	width: 60%;
+	color: white;
+	padding: .75rem 1rem;
+	margin: 1rem 0 2rem .5rem;
+}
+
+.entry-title,
+.entry-content h2 {
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.cat-links {
+	padding-right: 20px;
+}
+
+.entry-title {
+	position: absolute;
+	padding: .75rem 1.5rem;
+	background-color: #248A83;
+	max-width: 75%;
+	left: 0;
+	top: 0;
+	width: 50%;
+	a {
+		text-decoration: none;
+		color: white;
+		height: auto;
+	}
 }
