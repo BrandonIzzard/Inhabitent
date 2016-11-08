@@ -13,6 +13,7 @@
         flex: 25%;
         h3 {
             text-transform: uppercase;
+            font-weight: bold;
             color: #d99054;
         }
         p {
@@ -28,8 +29,12 @@
     }
     .footer-logo {
         flex-basis: 50%;
-        margin-right: 4%;
+        margin-right: 5%;
+        padding-top: 1rem;
         text-align: end;
+    }
+    a img {
+        max-width: 50%;
     }
 }
 
