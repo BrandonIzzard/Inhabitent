@@ -15,6 +15,30 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
+
+<div class="taxonomy-loop">
+
+  <?php 
+  $taxonomies  = get_terms( array(
+   'taxonomy' => 'product_type',
+   'hide_empty' => true,
+   ) );
+
+  foreach ( $taxonomies  as $term ):?>
+
+    <div>
+    <?php $url = get_term_link($term->slug, 'product_type') ?>
+    <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
+
+    <p> <?php echo $term->description ?> </p>
+
+    <a href="<?php echo $url ?>"> <?php echo $term->name ?> Stuff </a>
+    </div>
+ <?php endforeach; wp_reset_postdata(); ?>
+  
+  
+</div>
+
 <div>
 	<h2 class ="latest-adventures">Inhabitent Journal</h2>
 
