@@ -5,9 +5,9 @@
 <div id="primary">
 
 	<section class = "about-hero">
-
+	<h1>About</h1>
 	</section>
-	<section class = "about-us"
+	<section class = "about-us">
 	<div class= "our-story">
 		<?php echo CFS()->get( 'our_story' ); ?>
 	</div>

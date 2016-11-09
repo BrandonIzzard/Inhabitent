@@ -578,6 +578,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.container {
+  width: 1120px; }
+
 .sticky {
   display: block; }
 
@@ -593,7 +596,8 @@ a {
 
 .content-area {
   margin-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%;
+  width: 73%; }
 
 .page-content,
 .entry-content,
@@ -678,10 +682,13 @@ a {
       align-items: center; }
   .about-hero h1 {
     color: #fff;
-    font: 2rem; }
+    font: 2rem;
+    text-transform: uppercase; }
 
 .about-us {
   margin: 0 5%; }
+  .about-us h2 {
+    text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Media
