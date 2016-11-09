@@ -86,7 +86,7 @@
 }
 
 .site-main {
-	margin-top: 7%;
+	margin-top: 5%;
 }
 
 //Headers
@@ -121,4 +121,21 @@
 		color: white;
 		height: auto;
 	}
+}
+
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: #fff;
+    font: 2rem;
+  }
+}
+
+.about-us {
+  margin: 0 5%;
+  h2 {
+    text-transform: uppercase;
+  }
 }

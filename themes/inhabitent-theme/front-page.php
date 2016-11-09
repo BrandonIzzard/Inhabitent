@@ -1,40 +1,40 @@
 <?php
 /**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying all pages.
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="hero-banner">
+</div>
 
-		<?php if ( have_posts() ) : ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+<div>
+	<h2 class ="latest-adventures">Inhabitent Journal</h2>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+	<?php
+	$args = array(
+		'post_type' =>'post',
+		'order' => 'ASC',
+		'posts_per_page' => 3,);
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+		$product_posts = get_posts( $args ); // returns an array of posts ?>
+		<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+			<?php the_post_thumbnail(['480px, 480px']); ?>
+			<?php the_date(); ?>
+			<?php comments_number(); ?>
+			<?php the_title(); ?>
 
-			<?php endwhile; ?>
+		<?php endforeach; wp_reset_postdata(); ?>
 
-			<?php the_posts_navigation(); ?>
+		<section class= "adventures">
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+		</section>
+	</div>
+	<?php get_footer(); ?>

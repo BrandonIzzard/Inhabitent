@@ -24,8 +24,8 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 // Remove "Editor" links from sub-menus
 
 function inhabitent_remove_submenus() {
-    remove_submenu_page( 'themes.php', 'theme-editor.php' );
-    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+  remove_submenu_page( 'themes.php', 'theme-editor.php' );
+  remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
@@ -34,8 +34,31 @@ function my_loginlogo() {
   echo '<style type="text/css">
 
   .login h1 a {
-      background-image: url(' . get_template_directory_uri() . './images/logo/inhabitent-logo-text-dark.svg) !important;
-    }
-  </style>';
+    background-image: url(' . get_template_directory_uri() . './images/logo/inhabitent-logo-text-dark.svg) !important;
+  }
+</style>';
 }
-add_action('login_head', 'my_loginlogo');
+add_action('login_head', 'my_loginlogo'); 
+
+
+
+function my_styles_method() {
+
+  if(!is_page_template( 'about.php' )){
+    return;
+  }
+
+       $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
+       $custom_css = "
+       .about-hero{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ), url({$url}) no-repeat center bottom; 
+         background-size: cover;   
+         height: 100vh;
+
+       }
+       .our-story .our-team {
+
+       }}";
+       wp_add_inline_style( 'red-starter-style', $custom_css );
+     }
+     add_action( 'wp_enqueue_scripts', 'my_styles_method' );
