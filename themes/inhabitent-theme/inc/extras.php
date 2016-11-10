@@ -40,6 +40,17 @@ function my_loginlogo() {
 }
 add_action('login_head', 'my_loginlogo'); 
 
+/** Adjust post limit on shop page */
+
+function product_posts_per_page ( $query ) {
+  if ( is_post_type_archive('product') && !is_admin() && $query->is_main_query() ) {
+    $query->set('posts_per_page', '16' );
+    $query->set('orderby', 'title' );
+    $query->set('order', 'ASC' );
+  }
+}
+add_action ( 'pre_get_posts', 'product_posts_per_page');
+
 
 
 function my_styles_method() {
@@ -52,13 +63,18 @@ function my_styles_method() {
        $custom_css = "
        .about-hero{
         background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ), url({$url}) no-repeat center bottom; 
-         background-size: cover;   
-         height: 100vh;
+        background-size: cover;   
+        height: 100vh;
 
-       }
-       .our-story .our-team {
+      }
+      .our-story .our-team {
 
-       }}";
-       wp_add_inline_style( 'red-starter-style', $custom_css );
-     }
-     add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+      }}";
+      wp_add_inline_style( 'red-starter-style', $custom_css );
+    }
+    add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+    function new_excerpt_more( $more ) {
+      return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+    }
+    add_filter( 'excerpt_more', 'new_excerpt_more' );

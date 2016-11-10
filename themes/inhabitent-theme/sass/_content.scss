@@ -4,7 +4,10 @@
 
 
 /* Posts and pages */
+
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1120px;
 }
 
@@ -26,9 +29,9 @@
 }
 
 .content-area {
-	margin-left: 5%;
+	border-right: 1px solid #e1e1e1;
 	padding-right: 5%;
-  width: 75%;
+  	width: 75%;
 }
 
 .page-content,
@@ -70,10 +73,7 @@
 	position: relative;
 }
 
-.entry-content,
-.entry-header img {
-	width: 60%;
-}
+
 
 .entry-meta {
 	position: absolute;
@@ -90,7 +90,8 @@
 }
 
 .site-main {
-	margin-top: 5%;
+	padding-top: 5%;
+	overflow: hidden;
 }
 
 //Headers
@@ -106,6 +107,10 @@
 .entry-content h2 {
 	text-transform: uppercase;
 	font-size: 2rem;
+	
+} p {
+	max-width: 640px;
+	
 }
 
 .cat-links {
@@ -144,7 +149,35 @@
     text-transform: uppercase;
   }
 }
-.taxonomy-loop {
-  background-color: blue;
-  height: 20vh;
+.taxonomy-loop img {
+  height: 50px;
 }
+
+.adventures {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 33%;
+   height: 200px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   a {
+       text-decoration: none;
+       color: white;
+       &:visited {
+           color: white;
+       }
+       &:hover {
+           color: #f0e4d1 
+       }
+   }
+}
+
+.latest-adventures {
+   font-size: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+   p:hover {
+       color: white;
+   }
+}
+

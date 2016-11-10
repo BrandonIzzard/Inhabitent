@@ -5,10 +5,28 @@
 .widget {
 	margin: 0 0 $base__space-unit;
 
+
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	p {
+		margin-bottom: 0.5rem;
+	}
+}
+.widget-text {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.widget-area {
+	padding-left: 5%;
+	width: 25%;
+}
+.day-of-week {
+	font-weight: bold;
 }
 
 /* Search widget. */

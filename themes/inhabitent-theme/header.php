@@ -17,18 +17,19 @@
 
 <body <?php body_class(); ?>>
 
-	
+	<div>
 	
 	<nav id="site-navigation" class="main-navigation" role="navigation">
-	<div class="logo">
-		<a href="home">
+		<div class="logo">
+			<a href="home">
 
-			<img src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
-		</a>
-</div>
+				<img src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
+			</a>
+		</div>
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
+		</div>
 	</nav><!-- #site-navigation -->
 </header><!-- #masthead -->
 

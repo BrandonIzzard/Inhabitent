@@ -296,7 +296,11 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -436,7 +440,8 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  border-bottom: 1px solid #e1e1e1; }
   .main-navigation .logo {
     margin-left: 50px;
     display: -ms-flexbox;
@@ -569,6 +574,21 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget h2 {
+    font-size: 1.5rem; }
+  .widget p {
+    margin-bottom: 0.5rem; }
+
+.widget-text {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.widget-area {
+  padding-left: 5%;
+  width: 25%; }
+
+.day-of-week {
+  font-weight: bold; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -579,6 +599,8 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1120px; }
 
 .sticky {
@@ -595,7 +617,7 @@ a {
   display: inline; }
 
 .content-area {
-  margin-left: 5%;
+  border-right: 1px solid #e1e1e1;
   padding-right: 5%;
   width: 75%; }
 
@@ -626,10 +648,6 @@ a {
 .entry-header {
   position: relative; }
 
-.entry-content,
-.entry-header img {
-  width: 60%; }
-
 .entry-meta {
   position: absolute;
   background-color: #248A83;
@@ -643,7 +661,8 @@ a {
     color: white; }
 
 .site-main {
-  margin-top: 5%; }
+  padding-top: 5%;
+  overflow: hidden; }
 
 .entry-title {
   position: relative;
@@ -656,6 +675,9 @@ a {
 .entry-content h2 {
   text-transform: uppercase;
   font-size: 2rem; }
+
+p {
+  max-width: 640px; }
 
 .cat-links {
   padding-right: 20px; }
@@ -689,6 +711,34 @@ a {
   margin: 0 5%; }
   .about-us h2 {
     text-transform: uppercase; }
+
+.taxonomy-loop img {
+  height: 50px; }
+
+.adventures {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .adventures a {
+    text-decoration: none;
+    color: white; }
+    .adventures a:visited {
+      color: white; }
+    .adventures a:hover {
+      color: #f0e4d1; }
+
+.latest-adventures {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center; }
+  .latest-adventures p:hover {
+    color: white; }
 
 /*--------------------------------------------------------------
 # Media

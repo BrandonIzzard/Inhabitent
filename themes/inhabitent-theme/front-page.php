@@ -14,7 +14,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 	</main><!-- #main -->
 </div><!-- #primary -->
-
+<div class = "container">
 
 <div class="taxonomy-loop">
 
@@ -34,7 +34,7 @@ get_header(); ?>
 
     <a href="<?php echo $url ?>"> <?php echo $term->name ?> Stuff </a>
     </div>
- <?php endforeach; wp_reset_postdata(); ?>
+ <?php endforeach ?>
   
   
 </div>
@@ -50,15 +50,18 @@ get_header(); ?>
 
 		$product_posts = get_posts( $args ); // returns an array of posts ?>
 		<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+			<div class="adventures">
 			<?php the_post_thumbnail(['480px, 480px']); ?>
 			<?php the_date(); ?>
 			<?php comments_number(); ?>
 			<?php the_title(); ?>
+			</div>
 
 		<?php endforeach; wp_reset_postdata(); ?>
 
 		<section class= "adventures">
 
 		</section>
+		</div>
 	</div>
 	<?php get_footer(); ?>
