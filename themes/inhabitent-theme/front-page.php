@@ -16,52 +16,54 @@ get_header(); ?>
 </div><!-- #primary -->
 <div class = "container">
 
-<div class="taxonomy-loop">
+	<h2 class="shop-stuff">Shop Stuff</h2>
 
-  <?php 
-  $taxonomies  = get_terms( array(
-   'taxonomy' => 'product_type',
-   'hide_empty' => true,
-   ) );
+	<div class="taxonomy-loop">
 
-  foreach ( $taxonomies  as $term ):?>
+		<?php 
+		$taxonomies  = get_terms( array(
+			'taxonomy' => 'product_type',
+			'hide_empty' => true,
+			) );
 
-    <div>
-    <?php $url = get_term_link($term->slug, 'product_type') ?>
-    <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
+			foreach ( $taxonomies  as $term ):?>
 
-    <p> <?php echo $term->description ?> </p>
+			<div class="taxonomy-loop-wrapper">
+				<?php $url = get_term_link($term->slug, 'product_type') ?>
+				<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
 
-    <a href="<?php echo $url ?>"> <?php echo $term->name ?> Stuff </a>
-    </div>
- <?php endforeach ?>
-  
-  
-</div>
+				<p> <?php echo $term->description ?> </p>
 
-<div>
-	<h2 class ="latest-adventures">Inhabitent Journal</h2>
-
-	<?php
-	$args = array(
-		'post_type' =>'post',
-		'order' => 'ASC',
-		'posts_per_page' => 3,);
-
-		$product_posts = get_posts( $args ); // returns an array of posts ?>
-		<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-			<div class="adventures">
-			<?php the_post_thumbnail(['480px, 480px']); ?>
-			<?php the_date(); ?>
-			<?php comments_number(); ?>
-			<?php the_title(); ?>
+				<a href="<?php echo $url ?>" class='btn'> <?php echo $term->name ?> Stuff </a>
 			</div>
+		<?php endforeach ?>
 
-		<?php endforeach; wp_reset_postdata(); ?>
 
+	</div>
+
+	<div>
+		<h2 class ="latest-adventures">Inhabitent Journal</h2>
 		<section class= "adventures">
+			<?php
+			$args = array(
+				'post_type' =>'post',
+				'order' => 'ASC',
+				'posts_per_page' => 3,);
 
-		</section>
+				$product_posts = get_posts( $args ); // returns an array of posts ?>
+				<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+					<div class="adventures">
+						<?php the_post_thumbnail(['480px, 480px']); ?>
+						<?php the_date(); ?>
+						<?php comments_number(); ?>
+						<?php the_title(); ?>
+					</div>
+
+				<?php endforeach; wp_reset_postdata(); ?>
+
+				
+
+			</section>
 		</div>
 	</div>
 	<?php get_footer(); ?>

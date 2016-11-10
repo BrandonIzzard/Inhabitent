@@ -1,9 +1,9 @@
 
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area container">
 	<main id="main" class="site-main" role="main">
-<div class="container">
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -30,7 +30,7 @@
 		<?php endif; ?>
 
 		<?php echo CFS()->get( 'product_price' ); ?>
-</div>
+
 
 	</main><!-- #main -->
 </div><!-- #primary -->

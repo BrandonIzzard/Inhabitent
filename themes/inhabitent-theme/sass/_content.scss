@@ -6,9 +6,9 @@
 /* Posts and pages */
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1120px;
 }
 
 .sticky {
@@ -31,7 +31,7 @@
 .content-area {
 	border-right: 1px solid #e1e1e1;
 	padding-right: 5%;
-  	width: 75%;
+	width: 75%;
 }
 
 .page-content,
@@ -89,10 +89,7 @@
 	}
 }
 
-.site-main {
-	padding-top: 5%;
-	overflow: hidden;
-}
+
 
 //Headers
 .entry-title {
@@ -108,76 +105,117 @@
 	text-transform: uppercase;
 	font-size: 2rem;
 	
-} p {
-	max-width: 640px;
-	
-}
+	} p {
+		max-width: 640px;
 
-.cat-links {
-	padding-right: 20px;
-}
-
-.entry-title {
-	position: absolute;
-	padding: .75rem 1.5rem;
-	background-color: #248A83;
-	max-width: 60%;
-	left: 0;
-	top: 0;
-	width: 50%;
-	a {
-		text-decoration: none;
-		color: white;
-		height: auto;
 	}
-}
 
-.about-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    color: #fff;
-    font: 2rem;
-    text-transform: uppercase;
-  }
-}
+	.cat-links {
+		padding-right: 20px;
+	}
 
-.about-us {
-  margin: 0 5%;
-  h2 {
-    text-transform: uppercase;
-  }
-}
-.taxonomy-loop img {
-  height: 50px;
-}
+	.entry-title {
+		position: absolute;
+		padding: .75rem 1.5rem;
+		background-color: #248A83;
+		max-width: 60%;
+		left: 0;
+		top: 0;
+		width: 50%;
+		a {
+			text-decoration: none;
+			color: white;
+			height: auto;
+		}
+	}
 
-.adventures {
-   display: flex;
-   justify-content: space-between;
-   flex-basis: 33%;
-   height: 200px;
-   margin: 0 auto;
-   margin-bottom: 20px;
-   a {
-       text-decoration: none;
-       color: white;
-       &:visited {
-           color: white;
-       }
-       &:hover {
-           color: #f0e4d1 
-       }
-   }
-}
+	.about-hero {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			color: #fff;
+			font: 2rem;
+			text-transform: uppercase;
+		}
+	}
 
-.latest-adventures {
-   font-size: 3rem;
-   text-transform: uppercase;
-   text-align: center;
-   p:hover {
-       color: white;
-   }
-}
+	.about-us {
+		margin: 0 5%;
+		h2 {
+			text-transform: uppercase;
+		}
+	}
+
+	.taxonomy-loop {
+
+		display:flex;
+		justify-content:space-between;
+		text-align:center;
+		margin: 2rem;
+		img {
+			height: 75px;
+			width: 75px;
+		}
+	}
+
+	.taxonomy-loop-wrapper {
+		border: 1px solid #e1e1e1;
+		border-top: 4px solid #e1e1e1;
+		flex: 0 1 23%;
+		max-width: 23%;
+		padding: 1rem;
+		&:hover {
+			border-color: #d99054;
+		}
+	}
+
+	.shop-stuff {
+		font-size: 2.4rem;
+		font-weight: 400;
+		margin-bottom: 3.75rem;
+		text-align: center;
+	}
+
+	.btn {
+		background: #248a83;
+		border: none;
+		border-radius: 0;
+		font-size: .8rem;
+		color: #fff;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+
+
+
+	.adventures {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 33%;
+		height: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		a {
+			text-decoration: none;
+			color: white;
+			&:visited {
+				color: white;
+			}
+			&:hover {
+				color: #f0e4d1 
+			}
+		}
+	}
+
+	.latest-adventures {
+		font-size: 3rem;
+		text-transform: uppercase;
+		text-align: center;
+		p:hover {
+			color: white;
+		}
+	}
 
