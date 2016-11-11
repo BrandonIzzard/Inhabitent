@@ -42,8 +42,8 @@ get_header(); ?>
 	</div>
 
 	<div>
-		<h2 class ="latest-entries">Inhabitent Journal</h2>
-		<section class= "container">
+		<h2 class ="">Inhabitent Journal</h2>
+		<section class= "latest-entries container">
 			<?php
 			$args = array(
 				'post_type' =>'post',
