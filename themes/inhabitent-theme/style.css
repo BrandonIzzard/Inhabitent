@@ -745,29 +745,30 @@ p {
   text-decoration: none;
   text-transform: uppercase; }
 
-.adventures {
+.latest-entries {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
-  height: 200px;
   margin: 0 auto;
   margin-bottom: 20px; }
-  .adventures a {
+  .latest-entries a {
     text-decoration: none;
     color: white; }
-    .adventures a:visited {
+    .latest-entries a:visited {
       color: white; }
-    .adventures a:hover {
+    .latest-entries a:hover {
       color: #f0e4d1; }
 
-.latest-adventures {
-  font-size: 3rem;
+.journal-entries {
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center; }
-  .latest-adventures p:hover {
+  .journal-entries img {
+    max-height: 250px; }
+  .journal-entries p:hover {
     color: white; }
 
 /*--------------------------------------------------------------

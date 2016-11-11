@@ -42,8 +42,8 @@ get_header(); ?>
 	</div>
 
 	<div>
-		<h2 class ="latest-adventures">Inhabitent Journal</h2>
-		<section class= "adventures">
+		<h2 class ="latest-entries">Inhabitent Journal</h2>
+		<section class= "container">
 			<?php
 			$args = array(
 				'post_type' =>'post',
@@ -52,8 +52,8 @@ get_header(); ?>
 
 				$product_posts = get_posts( $args ); // returns an array of posts ?>
 				<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-					<div class="adventures">
-						<?php the_post_thumbnail(['480px, 480px']); ?>
+					<div class="journal-entries">
+						<?php the_post_thumbnail(); ?>
 						<?php the_date(); ?>
 						<?php comments_number(); ?>
 						<?php the_title(); ?>

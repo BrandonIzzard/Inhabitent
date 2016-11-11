@@ -191,11 +191,11 @@
 
 
 
-	.adventures {
+	.latest-entries {
 		display: flex;
 		justify-content: space-between;
 		flex-basis: 33%;
-		height: 200px;
+		
 		margin: 0 auto;
 		margin-bottom: 20px;
 		a {
@@ -210,10 +210,13 @@
 		}
 	}
 
-	.latest-adventures {
-		font-size: 3rem;
+	.journal-entries {
+		font-size: 1rem;
 		text-transform: uppercase;
 		text-align: center;
+		img {
+			max-height: 250px;
+		}
 		p:hover {
 			color: white;
 		}
