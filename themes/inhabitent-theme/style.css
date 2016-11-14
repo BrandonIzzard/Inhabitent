@@ -594,14 +594,14 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
+
+.flex {
+  display: -ms-flexbox;
+  display: flex; }
 
 .sticky {
   display: block; }
@@ -707,6 +707,8 @@ p {
   margin: 0 5%; }
   .about-us h2 {
     text-transform: uppercase; }
+  .about-us p {
+    margin: 0 auto; }
 
 .taxonomy-loop {
   display: -ms-flexbox;
@@ -853,6 +855,69 @@ object {
     background-color: green;
     border: 1px solid green;
     color: white; }
+
+a.btn .black-btn {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  line-height: 1;
+  font-size: .8rem;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.black-btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  margin: 0 3px; }
+
+.journal-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4rem; }
+
+.inhabitent-journal-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4rem; }
+
+.inhabitent-journal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 2rem; }
+  .inhabitent-journal .individual-journal-post {
+    max-width: 400px;
+    padding-left: 11px; }
+    .inhabitent-journal .individual-journal-post .journal-post-container {
+      border: 1px solid #e1e1e1;
+      width: 360px;
+      padding: 1.5rem;
+      border-top-width: 4px;
+      font-size: .75rem; }
+      .inhabitent-journal .individual-journal-post .journal-post-container h3 {
+        color: #248a83;
+        font-size: 1.4rem;
+        margin-top: 5px; }
+      .inhabitent-journal .individual-journal-post .journal-post-container a {
+        border: 1px solid black;
+        padding: .75rem 2.5rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1rem; }
+        .inhabitent-journal .individual-journal-post .journal-post-container a:hover {
+          background-color: #248a83;
+          color: #fff;
+          border-color: #248a83; }
+    .inhabitent-journal .individual-journal-post img {
+      width: 360px;
+      height: 250px;
+      display: block; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
