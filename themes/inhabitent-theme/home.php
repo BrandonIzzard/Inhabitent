@@ -6,9 +6,12 @@
  */
 
 get_header(); ?>
-
+	<div class="container journal-wrapper">
 	<div id="primary" class="content-area" >
+	
 		<main id="main" class="site-main" role="main">
+
+	
 
 		<?php if ( have_posts() ) : ?>
 
@@ -32,9 +35,11 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 		</main><!-- #main -->
-	</div><!-- #primary -->
-</div>
+</div><!-- #primary -->
+
+		
 <?php get_sidebar(); ?>
+	
+</div>
 <?php get_footer(); ?>

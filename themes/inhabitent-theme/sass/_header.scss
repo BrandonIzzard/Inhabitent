@@ -1,11 +1,24 @@
 .page-header h2 {
     text-align: center;
+    text-transform: uppercase;
+}
+
+.shop-page-header {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px dashed lightgray;
+    margin-bottom: 2rem;
 }
 
 .shop-page-product-types {
-    justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 560px;
     text-transform: uppercase;
     text-decoration: none;
 }

@@ -15,7 +15,7 @@ get_header(); ?>
 		</div>
 		<div class = "single-product-content">
 			<h2 class ="single-product-title"><?php the_title();?></h2>
-			<p class="product_price"><?php echo CFS()->get( 'product_price' ); ?>	</p>
+			<p class="single-product-price"><?php echo CFS()->get( 'product_price' ); ?>	</p>
 							<?php the_content(); ?>
 							<?php
 							wp_link_pages( array(

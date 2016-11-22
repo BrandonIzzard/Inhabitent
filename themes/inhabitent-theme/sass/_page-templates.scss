@@ -76,6 +76,8 @@ a.btn a.black-btn {
        width: 360px;
        padding:1.5rem;
        border-top-width: 4px;
+       height: 180px;
+       position: relative;
        font-size:.75rem;
       
 
@@ -89,6 +91,8 @@ a.btn a.black-btn {
         padding: .75rem 2.5rem;
         text-decoration:none;
         color:black;
+        position: absolute;
+        bottom: 5px;
         text-transform: uppercase;
         font-size:1rem;
 
@@ -110,6 +114,30 @@ a.btn a.black-btn {
 }
 
 ////// ------------- Shop Page ---------------- ////////
+
+//// --- Archived Products --- ///
+
+.product-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.individual-product {
+   border: 1px solid #e1e1e1;
+    flex: 0 1 23%;
+    max-width: 23%;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+///// ----- Single Product ------ ///
 
 .individual-product img {
 
@@ -144,5 +172,9 @@ a.btn a.black-btn {
 
 .single-product-title {
   font-size: 2rem;
+  text-transform: uppercase;
   color: #d99054;
+}
+.single-product-price {
+  font-size: 1.25rem;
 }

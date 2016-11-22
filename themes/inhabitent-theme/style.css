@@ -787,6 +787,10 @@ p {
   .journal-entries p:hover {
     color: white; }
 
+.journal-wrapper {
+  display: -ms-flexbox;
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -915,6 +919,8 @@ a.black-btn {
       width: 360px;
       padding: 1.5rem;
       border-top-width: 4px;
+      height: 180px;
+      position: relative;
       font-size: .75rem; }
       .inhabitent-journal .individual-journal-post .journal-post-container h3 {
         color: #248a83;
@@ -925,6 +931,8 @@ a.black-btn {
         padding: .75rem 2.5rem;
         text-decoration: none;
         color: black;
+        position: absolute;
+        bottom: 5px;
         text-transform: uppercase;
         font-size: 1rem; }
         .inhabitent-journal .individual-journal-post .journal-post-container a:hover {
@@ -935,6 +943,22 @@ a.black-btn {
       width: 360px;
       height: 250px;
       display: block; }
+
+.product-posts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 1.5rem; }
+
+.individual-product {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  max-width: 23%;
+  margin-bottom: 1.5rem; }
 
 .individual-product img {
   max-height: 200px;
@@ -970,16 +994,32 @@ a.black-btn {
 
 .single-product-title {
   font-size: 2rem;
+  text-transform: uppercase;
   color: #d99054; }
 
+.single-product-price {
+  font-size: 1.25rem; }
+
 .page-header h2 {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
+
+.shop-page-header {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px dashed lightgray;
+  margin-bottom: 2rem; }
+  .shop-page-header h2 {
+    text-align: center;
+    text-transform: uppercase; }
 
 .shop-page-product-types {
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-left: 0;
-  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto;
+  max-width: 560px;
   text-transform: uppercase;
   text-decoration: none; }
 
