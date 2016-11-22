@@ -11,19 +11,17 @@
 }
 
 
-.read-more {
- padding-left: 3rem;
-}
 
-.read-more-button {
- border: 1px solid white;
+
+.read-more {
+ border: 1px solid black;
+ color: black;
  font-size: 1rem;
  padding: .8rem 1.2rem;
- /*margin-top: 4%;*/
  text-transform: uppercase;
+ text-decoration: none;
  &:hover {
-   background-color: green;
-   border: 1px solid green;
+   background-color: #248a83;
    color: white;
  }
 }

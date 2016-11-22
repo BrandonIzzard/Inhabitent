@@ -604,6 +604,10 @@ a {
   .widget-area a {
     text-decoration: none;
     color: #248a83; }
+  .widget-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
 
 .day-of-week {
   font-weight: bold; }
@@ -686,7 +690,10 @@ a {
   padding: .75rem 1rem;
   margin: 1rem 0 2rem 0; }
 
-.entry-title,
+.entry-title h2 {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
 .entry-content h2 {
   text-transform: uppercase;
   font-size: 2rem; }
@@ -694,6 +701,17 @@ a {
 p {
   max-width: 640px; }
 
+/*	
+	.read-more {
+		background-color: transparent;
+		border: 1px solid #000;
+   		font-size: .9rem;
+    	line-height: 1;
+    	padding: .6rem 1rem;
+		color: #000;
+		text-decoration: none;
+		text-transform: uppercase;
+	}*/
 .cat-links {
   padding-right: 20px; }
 
@@ -734,8 +752,7 @@ p {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  text-align: center;
-  margin: 2rem; }
+  text-align: center; }
   .taxonomy-loop img {
     height: 75px;
     width: 75px; }
@@ -872,17 +889,14 @@ object {
   background-size: 50% 50%, cover, cover; }
 
 .read-more {
-  padding-left: 3rem; }
-
-.read-more-button {
-  border: 1px solid white;
+  border: 1px solid black;
+  color: black;
   font-size: 1rem;
   padding: .8rem 1.2rem;
-  /*margin-top: 4%;*/
-  text-transform: uppercase; }
-  .read-more-button:hover {
-    background-color: green;
-    border: 1px solid green;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .read-more:hover {
+    background-color: #248a83;
     color: white; }
 
 a.btn a.black-btn {

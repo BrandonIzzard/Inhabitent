@@ -25,6 +25,10 @@
 	a{
 		text-decoration: none;
 		color: #248a83;
+	} ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 	padding-top: 3rem;
 	padding-left: 5%;
@@ -33,6 +37,8 @@
 .day-of-week {
 	font-weight: bold;
 }
+
+
 
 /* Search widget. */
 .widget_search .search-submit {
