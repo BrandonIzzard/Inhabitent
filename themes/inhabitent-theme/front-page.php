@@ -14,7 +14,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 	</main><!-- #main -->
 </div><!-- #primary -->
-<div class = "container">
+<div class= "container">
 
 	<h2 class="shop-stuff">Shop Stuff</h2>
 

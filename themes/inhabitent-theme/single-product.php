@@ -15,8 +15,14 @@ get_header(); ?>
 		</div>
 		<div class = "single-product-content">
 			<h2 class ="single-product-title"><?php the_title();?></h2>
-			<p class = "single-product-price"><?php echo CFS()->get( 'product_price' ); ?></p>
-			<p class = "single-product-description"><?php the_content();?></p>
+			<p class="product_price"><?php echo CFS()->get( 'product_price' ); ?>	</p>
+							<?php the_content(); ?>
+							<?php
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+								'after'  => '</div>',
+								) );
+								?>
 		<div class = "social-media-button">
 		    <a class = "black-btn" href ="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
 			<a class = "black-btn" href ="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
@@ -31,5 +37,5 @@ get_header(); ?>
 			
 		<?php endwhile; // End of the loop. ?>
 	</main><!-- #main -->
-</section>><!-- #primary -->
+</section><!-- #primary -->
 <?php get_footer(); ?>

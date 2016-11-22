@@ -28,7 +28,7 @@
  }
 }
 
-a.btn .black-btn {
+a.btn a.black-btn {
 		background: #248a83;
 		border: none;
 		border-radius: 0;
@@ -39,12 +39,15 @@ a.btn .black-btn {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	.black-btn {
+	a.black-btn {
 		background-color: transparent;
 		border: 1px solid #000;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: .6rem 1rem;
 		color: #000;
 		text-decoration: none;
-		margin: 0 3px;
+    text-transform: uppercase;
 	}
 
 .journal-title {
@@ -104,4 +107,42 @@ a.btn .black-btn {
       display:block;
     }
 }
+}
+
+////// ------------- Shop Page ---------------- ////////
+
+.individual-product img {
+
+  max-height: 200px;
+  width: 250px;
+}
+
+.single-product-container {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.single-product-thumb {
+  display: flex;
+  max-width: 640px;
+  flex-basis: 48%;
+}
+
+.single-product-thumb img {
+    width: 640px;
+    height: 360px;
+    margin-top: 2rem;
+  }
+
+.single-product-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+
+.single-product-title {
+  font-size: 2rem;
+  color: #d99054;
 }

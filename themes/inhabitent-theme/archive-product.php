@@ -3,12 +3,14 @@
 
 <div id="primary" class="content-area-product">
 	<main id="main" class="site-main-product container" role="main">
+<div class="container">
+	
 
 		<?php if ( have_posts() ) : ?>
 		  <section class ="product-nav">
 			<header class="page-header">
 				<h2>Shop Stuff</h2>
-			</header><!-- .page-header -->
+			</header>
 
 
   <!--Calling Product Types-->
@@ -22,16 +24,24 @@
 	<?php endforeach;?>
    </div>
 </section>
+
 		<div class = "product-post">
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<div class = "individual-product">
-					<?php
-					get_template_part( 'template-parts/content' );
-					?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<div class="individual-product">
+							<a href="<?php the_permalink(); ?>" rel="bookmark"> 
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div>
+										<?php the_post_thumbnail(); ?>
+									</div>
+								</a>
+							<?php endif; ?>
+							<div class="product-text">
+								<?php the_title( sprintf( '<h2 class="entry-title"><span>', esc_url( get_permalink() ) ), '</span></h2>' ); ?>
 
-
-				</div>
+								<p><?php echo CFS()->get( 'product_price' ); ?>	</p>
+							</div>
+						</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -42,6 +52,7 @@
 
 		<?php endif; ?>
 	</div>
+	
 </main><!-- #main -->
 
 </div><!-- #primary -->
