@@ -598,8 +598,12 @@ a {
   padding-bottom: 5%; }
 
 .widget-area {
+  padding-top: 3rem;
   padding-left: 5%;
   width: 25%; }
+  .widget-area a {
+    text-decoration: none;
+    color: #248a83; }
 
 .day-of-week {
   font-weight: bold; }
@@ -669,7 +673,8 @@ a {
   padding: .75rem 1rem;
   margin: 0 0 2rem 0;
   text-transform: uppercase;
-  bottom: 0; }
+  bottom: 0;
+  right: 143px; }
   .entry-meta a {
     text-decoration: none;
     color: white; }
@@ -790,6 +795,12 @@ p {
 .journal-wrapper {
   display: -ms-flexbox;
   display: flex; }
+
+.journal-posts {
+  padding-top: 3rem; }
+
+.our-team {
+  margin-bottom: 3rem; }
 
 /*--------------------------------------------------------------
 # Media

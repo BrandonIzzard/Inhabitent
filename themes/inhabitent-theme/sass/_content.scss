@@ -80,6 +80,7 @@
 	margin: 0 0 2rem 0;
 	text-transform: uppercase;
 	bottom: 0;
+	right: 143px;
 	a {
 		text-decoration: none;
 		color: white;
@@ -225,4 +226,13 @@
 
 .journal-wrapper {
 	display: flex;
+}
+
+.journal-posts {
+	padding-top: 3rem;
+}
+
+
+.our-team {
+	margin-bottom: 3rem;
 }

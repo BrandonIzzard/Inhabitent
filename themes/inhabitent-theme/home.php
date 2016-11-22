@@ -7,7 +7,7 @@
 
 get_header(); ?>
 	<div class="container journal-wrapper">
-	<div id="primary" class="content-area" >
+	<div id="primary" class="content-area journal-posts" >
 	
 		<main id="main" class="site-main" role="main">
 
