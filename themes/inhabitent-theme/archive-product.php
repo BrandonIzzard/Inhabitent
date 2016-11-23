@@ -26,16 +26,30 @@
 	 	</header>
 </section>
 
-		<div class = "product-posts">
+	
+			<?php if ( have_posts() ) : ?>
+
+			<?php /* Start the Loop */ ?>
+			<div class = "product-posts">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class = "individual-product">
-					<?php
-					get_template_part( 'template-parts/content' );
-					?>
 
+			<div class = "individual-product">
+                <?php if ( has_post_thumbnail() ) : ?>
+			<div class="thumbnail-wrapper">
+				<a href="<?php the_permalink()?> "><?php the_post_thumbnail( ); ?></a>
+			</div>
 
-				</div>
+			<?php endif; ?>
+
+			<div class="product-info">
+				<?php the_title( sprintf( '<p class="product-name"><span>', esc_url( get_permalink() ) ), '</span></p>' ); ?>
+
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
+            </div>
+
+			</div>
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
@@ -44,8 +58,7 @@
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-	</div>
-	
+			<?php endif; ?>
 </main><!-- #main -->
 
 </div><!-- #primary -->

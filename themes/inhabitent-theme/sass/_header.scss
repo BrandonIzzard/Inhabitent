@@ -5,6 +5,7 @@
 
 .shop-page-header {
     h2 {
+        font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
     }
@@ -18,9 +19,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 560px;
+    max-width: 280px;
     text-transform: uppercase;
-    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: #248a83;
+    }
 }
 
 .shop-header {
