@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<div class="container flex">
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -35,4 +35,6 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
+
+</div>
 <?php get_footer(); ?>
