@@ -21,7 +21,7 @@ a {
 	&:active {
 		outline: 0;
 	}
-	color: royalblue;
+	color:  #248A83;
 }
 
 /* Menus */
@@ -35,22 +35,24 @@ a {
 	margin-right: 50px;
 }
 .main-navigation {
-	height: 3rem;
-	background:rgba(255,255,255,0.5);	
-	width: 100%;
-	margin: 0 auto;
-	padding-right: 2rem;
 	display: flex;
-	justify-content: space-between;	
-	align-items: center;
-	border-bottom: 1px solid #e1e1e1;
+	justify-content: space-between;
+	height: 3rem;
+	background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+	margin: 0 auto;
+    width: 100%;
+    z-index: 3;
 	text-transform: uppercase;
 	font-family: 'novecento', sans-serif;
 	.logo{
-		margin-left: 50px;
 		display: flex;
 		align-items: center;	
 		height: 3rem;
+		padding-bottom: 10px;
 	}
 	
 

@@ -497,7 +497,7 @@ textarea {
 .widget-area {
   padding-top: 3rem;
   padding-left: 5%;
-  width: 25%; }
+  width: 30%; }
   .widget-area a {
     text-decoration: none;
     color: #248a83; }
@@ -512,6 +512,9 @@ textarea {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.site-content {
+  margin-top: 3rem; }
 
 .container {
   margin-left: auto;
@@ -538,7 +541,7 @@ textarea {
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
-  width: 75%; }
+  width: 70%; }
 
 .page-content,
 .entry-content,
@@ -778,7 +781,7 @@ big {
 
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a img {
     height: 32px; }
   a:visited {
@@ -799,27 +802,28 @@ a {
   margin-right: 50px; }
 
 .main-navigation {
-  height: 3rem;
-  background: rgba(255, 255, 255, 0.5);
-  width: 100%;
-  margin: 0 auto;
-  padding-right: 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  transition: top .5s linear;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 3;
   text-transform: uppercase;
   font-family: 'novecento', sans-serif; }
   .main-navigation .logo {
-    margin-left: 50px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    height: 3rem; }
+    height: 3rem;
+    padding-bottom: 10px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -960,7 +964,7 @@ object {
     background-color: #248a83;
     color: white; }
 
-a.btn a.black-btn {
+a.btn, a.black-btn {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -969,7 +973,8 @@ a.btn a.black-btn {
   color: #fff;
   padding: .75rem 1.5rem;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'novecento', sans-serif; }
 
 a.black-btn {
   background-color: transparent;

@@ -19,7 +19,7 @@
 
 	<div>
 	
-	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<nav id="site-navigation" class="main-navigation container" role="navigation">
 		<div class="logo">
 			<a href="home">
 
