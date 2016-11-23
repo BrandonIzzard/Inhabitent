@@ -5,7 +5,7 @@
  * @package RED_Starter_Theme
  */
 get_header(); ?>
-
+<div class ="container">
 <section id="primary" class="product-type-archive-page">
 	<main id="main" class="product-type-main" role="main">
 
@@ -18,14 +18,24 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class = "product-grid">
+			<div class = "product-posts">
 			<?php while ( have_posts() ) : the_post(); ?>
-			    <div class = "single-product">
-				<?php
-				get_template_part( 'template-parts/content' );
-				?>
-			    </div>
 
+			<div class = "individual-product">
+                <?php if ( has_post_thumbnail() ) : ?>
+			<div class="thumbnail-wrapper">
+				<a href="<?php the_permalink()?> "><?php the_post_thumbnail( ); ?></a>
+			</div>
+
+			<?php endif; ?>
+
+			<div class="product-info">
+				<?php the_title( sprintf( '<p class="product-name"><span>', esc_url( get_permalink() ) ), '</span></p>' ); ?>
+
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
+            </div>
+
+			</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -39,6 +49,6 @@ get_header(); ?>
 
 	</main><!-- #main -->
 </section><!-- #primary -->
-
+</div>
 
 <?php get_footer(); ?>

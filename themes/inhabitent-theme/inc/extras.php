@@ -53,6 +53,7 @@ add_action ( 'pre_get_posts', 'product_posts_per_page');
 
 
 
+
 function my_styles_method() {
 
   if(!is_page_template( 'about.php' )){
@@ -116,3 +117,22 @@ function red_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+
+function my_theme_archive_title( $title ) {
+   if ( is_category() ) {
+       $title = single_cat_title( '', false );
+   } elseif ( is_tag() ) {
+       $title = single_tag_title( '', false );
+   } elseif ( is_author() ) {
+       $title = '<span class="vcard">' . get_the_author() . '</span>';
+   } elseif ( is_post_type_archive() ) {
+       $title = post_type_archive_title( '', false );
+   } elseif ( is_tax() ) {
+       $title = single_term_title( '', false );
+   }
+ 
+   return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );

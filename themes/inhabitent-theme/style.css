@@ -252,7 +252,8 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -702,17 +703,9 @@ a {
 p {
   max-width: 640px; }
 
-/*	
-	.read-more {
-		background-color: transparent;
-		border: 1px solid #000;
-   		font-size: .9rem;
-    	line-height: 1;
-    	padding: .6rem 1rem;
-		color: #000;
-		text-decoration: none;
-		text-transform: uppercase;
-	}*/
+.entry-content {
+  margin-top: 3rem; }
+
 .cat-links {
   padding-right: 20px; }
 
@@ -1131,6 +1124,35 @@ a.black-btn {
 
 .single-product-price {
   font-size: 1.25rem; }
+
+.page-id-109 .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.page-id-109 .entry-title {
+  position: static;
+  background: none;
+  color: black;
+  padding: 0;
+  margin: 2rem 0 0 0; }
+
+.required {
+  color: #d99054; }
+
+.wpcf7-form label {
+  text-transform: uppercase; }
+
+.wpcf7-form-control.wpcf7-submit {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  font-size: .8rem;
+  box-shadow: none;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .page-header h2 {
   text-align: center;
