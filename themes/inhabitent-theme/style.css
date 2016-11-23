@@ -420,6 +420,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.search-form fieldset {
+  border: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -713,9 +716,6 @@ p {
 
 .type-post {
   margin-bottom: 2rem; }
-
-.search-form fieldset {
-  border: none; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -1206,6 +1206,9 @@ a.black-btn {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
+
+.page-id-109 .content-area {
+  margin-top: 3rem; }
 
 .page-id-109 .entry-title {
   position: static;

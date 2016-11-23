@@ -69,12 +69,9 @@
 	text-transform: uppercase;
 }
 
-//main content area
 .entry-header {
 	position: relative;
 }
-
-
 
 .entry-meta {
 	position: absolute;
@@ -90,8 +87,6 @@
 		color: white;
 	}
 }
-
-
 
 //Headers
 .entry-title {
@@ -251,8 +246,3 @@
 	margin-bottom: 2rem;
 }
 
-.search-form {
-	fieldset {
-		border: none;
-	}
-}
