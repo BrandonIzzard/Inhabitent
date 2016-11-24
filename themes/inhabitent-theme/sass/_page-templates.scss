@@ -26,7 +26,7 @@
  }
 }
 
-a.btn, a.black-btn {
+a.btn, a.black-btn, a.white-btn {
 		background: #248a83;
 		border: none;
 		border-radius: 0;
@@ -45,6 +45,16 @@ a.btn, a.black-btn {
     line-height: 1;
     padding: .6rem 1rem;
 		color: #000;
+		text-decoration: none;
+    text-transform: uppercase;
+	}
+  a.white-btn {
+		background-color: transparent;
+		border: 1px solid #FFF;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: .6rem 1rem;
+		color: #fff;
 		text-decoration: none;
     text-transform: uppercase;
 	}
@@ -316,9 +326,7 @@ padding-left: .5rem;
   display: flex;
   margin: 0 auto;
 }
-.content-area{
-  margin-top: 3rem;
-}
+
 .entry-title{
   position: static;
   background: none;

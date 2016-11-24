@@ -517,7 +517,7 @@ textarea {
   display: none; }
 
 .site-content {
-  margin-top: 3rem; }
+  padding-top: 3rem; }
 
 .container {
   margin-left: auto;
@@ -712,6 +712,14 @@ p {
   display: flex;
   margin: 0 auto;
   height: 500px; }
+  .adventures-container .adventure-info {
+    padding: 1rem; }
+    .adventures-container .adventure-info h3 {
+      margin-top: 0;
+      letter-spacing: 2px;
+      text-transform: none;
+      font-family: 'merriweather_lightregular', serif;
+      font-weight: 400; }
   .adventures-container .left-adventure {
     background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/canoe-girl.jpg) center;
     background-size: cover;
@@ -719,6 +727,10 @@ p {
     height: 500px;
     width: 50%;
     border-right: 20px solid white; }
+    .adventures-container .left-adventure h3 {
+      font-size: 3rem;
+      color: white;
+      line-height: 1.25; }
   .adventures-container .right-adventure {
     width: 50%; }
     .adventures-container .right-adventure .right-top {
@@ -728,6 +740,10 @@ p {
       padding: 0;
       height: 250px;
       width: 100%; }
+      .adventures-container .right-adventure .right-top h3 {
+        font-size: 2.4rem;
+        color: white;
+        line-height: 1.25; }
     .adventures-container .right-adventure .right-bottom {
       display: -ms-flexbox;
       display: flex;
@@ -738,12 +754,20 @@ p {
         height: 250px;
         width: 50%;
         border-right: 10px solid white; }
+        .adventures-container .right-adventure .right-bottom .right2 h3 {
+          font-size: 1.5rem;
+          color: white;
+          line-height: 1.25; }
       .adventures-container .right-adventure .right-bottom .right3 {
         background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/night-sky.jpg) center;
         background-size: cover;
         height: 250px;
         width: 50%;
         border-left: 10px solid white; }
+        .adventures-container .right-adventure .right-bottom .right3 h3 {
+          font-size: 1.5rem;
+          color: white;
+          line-height: 1.25; }
 
 .journal-wrapper {
   display: -ms-flexbox;
@@ -770,7 +794,7 @@ textarea {
   font-family: "merriweather_lightregular", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -857,6 +881,7 @@ a {
   position: fixed;
   transition: top .5s linear;
   margin: 0 auto;
+  padding: .5rem 1rem;
   width: 100%;
   z-index: 3;
   text-transform: uppercase;
@@ -938,7 +963,7 @@ a {
 
 .search-btn {
   padding-top: 4px;
-  margin-right: 8px; }
+  margin: 0 8px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1020,7 +1045,7 @@ object {
     background-color: #248a83;
     color: white; }
 
-a.btn, a.black-btn {
+a.btn, a.black-btn, a.white-btn {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -1039,6 +1064,16 @@ a.black-btn {
   line-height: 1;
   padding: .6rem 1rem;
   color: #000;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+a.white-btn {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: .6rem 1rem;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase; }
 
@@ -1260,9 +1295,6 @@ a.black-btn {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
-
-.page-id-109 .content-area {
-  margin-top: 3rem; }
 
 .page-id-109 .entry-title {
   position: static;

@@ -1,5 +1,5 @@
 .site-content {
-	margin-top: 3rem;
+	padding-top: 3rem;
 }
 
 .container {
@@ -236,6 +236,17 @@
 	display: flex;
 	margin: 0 auto;
 	height: 500px;
+
+	.adventure-info {
+			padding: 1rem;
+			h3 {
+				margin-top: 0;
+				letter-spacing: 2px;
+				text-transform: none;
+				font-family: 'merriweather_lightregular', serif;
+				font-weight: 400;
+			}
+		}
 	.left-adventure {
 		background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/canoe-girl.jpg) center;
 		background-size: cover; 
@@ -243,6 +254,12 @@
 		height: 500px; 
 		width: 50%;
 		border-right: 20px solid white;
+
+		 h3{
+			font-size: 3rem;
+			color:white;
+			line-height: 1.25;
+		}
 
 	} 
 	.right-adventure{
@@ -254,6 +271,12 @@
 			padding: 0;
 			height: 250px;
 			width: 100%;
+			 h3{
+				font-size: 2.4rem;
+				color:white;
+				line-height: 1.25;
+	
+			}
 		}
 		.right-bottom{
 			display:flex;
@@ -264,6 +287,11 @@
 				height: 250px;
 				width: 50%;
 				border-right: 10px solid white;
+				 h3{
+					font-size: 1.5rem;
+					color:white;
+					line-height: 1.25;
+				}
 			}
 			.right3{
 				background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/night-sky.jpg) center;
@@ -271,6 +299,11 @@
 				height: 250px;
 				width: 50%;
 				border-left: 10px solid white;
+				 h3{
+					font-size: 1.5rem;
+					color:white;
+					line-height: 1.25;
+				}
 			}
 		}
 	}
