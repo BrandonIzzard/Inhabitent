@@ -30,15 +30,18 @@ function inhabitent_remove_submenus() {
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
 
-function my_loginlogo() {
-  echo '<style type="text/css">
-
-  .login h1 a {
-    background-image: url(' . get_template_directory_uri() . './images/logo/inhabitent-logo-text-dark.svg) !important;
-  }
-</style>';
-}
-add_action('login_head', 'my_loginlogo'); 
+function my_login_logo() { ?>
+   <style type="text/css">
+       #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+            padding-bottom: 30px;
+		      	background-size: 310px !important; 
+		      	width: 310px !important;
+			      background-position: bottom !important;
+       }
+   </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 /** Adjust post limit on shop page */
 

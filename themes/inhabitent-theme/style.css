@@ -543,6 +543,7 @@ textarea {
 
 .content-area {
   border-right: 1px solid #e1e1e1;
+  padding-top: 5%;
   padding-right: 5%;
   width: 70%; }
 
@@ -580,7 +581,7 @@ textarea {
   padding: .75rem 1rem;
   margin: 0 0 2rem 0;
   text-transform: uppercase;
-  bottom: -25.5px;
+  bottom: -23.5px;
   right: 87px; }
   .entry-meta a {
     text-decoration: none;

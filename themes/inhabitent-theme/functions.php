@@ -118,21 +118,3 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-
-
-/** 
-* Changes the default wordpress logo in Log In page
-*/
-function custom_login_logo() { ?>
-    <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-            padding-bottom: 2rem;
-			background-size: 220px !important; width: 230px !important;background-position: bottom !important;
-        }
-    </style>
-<?php }
-add_action( 'login_header', 'custom_login_logo' );
-
-
-
