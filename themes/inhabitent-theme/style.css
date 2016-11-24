@@ -1033,7 +1033,7 @@ object {
 .hero-banner {
   background: url(../../images/logos/inhabitent-logo-full.svg) center no-repeat, linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
   height: 100vh;
-  background-size: 50% 50%, cover, cover; }
+  background-size: 20% 50%, cover, cover; }
 
 .read-more {
   border: 1px solid black;
@@ -1274,7 +1274,7 @@ a.white-btn {
 .single-product-thumb img {
   width: 640px;
   height: 360px;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 .single-product-content {
   display: -ms-flexbox;
