@@ -228,6 +228,53 @@
 		}
 	}
 
+.latest-adventures {
+	margin-bottom: 2rem;
+}
+
+	.adventures-container{
+	display: flex;
+	margin: 0 auto;
+	height: 500px;
+	.left-adventure {
+		background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/canoe-girl.jpg) center;
+		background-size: cover; 
+		padding: 0;
+		height: 500px; 
+		width: 50%;
+		border-right: 20px solid white;
+
+	} 
+	.right-adventure{
+		width: 50%;
+		.right-top{
+			border-bottom: 20px solid white;
+			background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/beach-bonfire.jpg) center;
+			background-size: cover; 
+			padding: 0;
+			height: 250px;
+			width: 100%;
+		}
+		.right-bottom{
+			display:flex;
+			width: 100%;
+			.right2{
+				background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/mountain-hikers.jpg) center;
+			background-size: cover; 
+				height: 250px;
+				width: 50%;
+				border-right: 10px solid white;
+			}
+			.right3{
+				background:  linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/night-sky.jpg) center;
+				background-size: cover; 
+				height: 250px;
+				width: 50%;
+				border-left: 10px solid white;
+			}
+		}
+	}
+}
 
 .journal-wrapper {
 	display: flex;

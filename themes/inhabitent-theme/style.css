@@ -704,6 +704,47 @@ p {
   .journal-entries p:hover {
     color: white; }
 
+.latest-adventures {
+  margin-bottom: 2rem; }
+
+.adventures-container {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  height: 500px; }
+  .adventures-container .left-adventure {
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/canoe-girl.jpg) center;
+    background-size: cover;
+    padding: 0;
+    height: 500px;
+    width: 50%;
+    border-right: 20px solid white; }
+  .adventures-container .right-adventure {
+    width: 50%; }
+    .adventures-container .right-adventure .right-top {
+      border-bottom: 20px solid white;
+      background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/beach-bonfire.jpg) center;
+      background-size: cover;
+      padding: 0;
+      height: 250px;
+      width: 100%; }
+    .adventures-container .right-adventure .right-bottom {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .adventures-container .right-adventure .right-bottom .right2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/mountain-hikers.jpg) center;
+        background-size: cover;
+        height: 250px;
+        width: 50%;
+        border-right: 10px solid white; }
+      .adventures-container .right-adventure .right-bottom .right3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2)), url(../../images/night-sky.jpg) center;
+        background-size: cover;
+        height: 250px;
+        width: 50%;
+        border-left: 10px solid white; }
+
 .journal-wrapper {
   display: -ms-flexbox;
   display: flex; }
@@ -1004,7 +1045,8 @@ a.black-btn {
 .front-page-heading {
   font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 3.75rem;
+  text-align: center; }
 
 .journal-title {
   text-align: center;
