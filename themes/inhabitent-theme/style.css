@@ -1290,7 +1290,8 @@ a.white-btn {
   color: #d99054; }
 
 .single-product-price {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin: 0; }
 
 .page-id-109 .site-content {
   display: -ms-flexbox;
