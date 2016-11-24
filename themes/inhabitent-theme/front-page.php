@@ -68,4 +68,29 @@ get_header(); ?>
 </div>
 </div>
 
+  <h2 class="title-header">Latest Adventures</h2>
+
+                 <div class="latest-adventures-container container">
+                    <div class="latest-adventures-left adventure-image-container">
+                            <img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/canoe-girl.jpg" alt="Image of a girl in a canoe">
+                            <h3>A Night with Friends at the Beach</h3>
+                         <div class="gradient-overlay"></div>
+                    </div>
+                    <div class="latest-adventures-right">
+                        <div class="adventure-image-container">
+                            <img class="top-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg" alt="beach bonfire">
+                            <h3>Getting Back to Nature in a Canoe</h3>
+                        </div
+                         <div class="adventure-image-container">
+                            <img class="bottom-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/night-sky.jpg" alt="night sky">
+                            <h3>Taking in the View at Big Mountain</h3>
+                        </div>
+                         <div class="adventure-image-container">
+                            <img class="bottom-image" src="<?php echo get_template_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg" alt="mountain-hikers">
+                             <h3>Star-Gazing at the Night Sky</h3>
+                        </div>
+                    </div>
+                </div>
+
+
 <?php get_footer(); ?>
